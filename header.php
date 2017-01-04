@@ -6,4 +6,9 @@
 	<?php wp_head(); ?>
  </head>
  </body>
-    <div id="header">header</div>
+    <div id="header">
+	<ul>
+	   <li id="logo"> logo </li>
+	   <li id="menu">menu </li>
+	</ul>
+	</div>

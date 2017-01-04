@@ -10,9 +10,39 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 
+*{
+	margin:0% 0%;
+	padding:0%;
+}
+
 #header{ /*the code for css of header part is here  */
 	width:100%;
 	border:1px solid;
+	height:25%;
+}
+
+#header ul{
+	margin:2% 0%;
+}
+
+#header li{
+	display:inline;	
+}
+
+#header ul #logo{
+	height:60%;
+	width:25%;
+	border:1px solid;
+	margin:0% 3%;
+	float:left;
+}
+
+#header ul #menu{
+	margin:0% 10%;
+	float:right;
+	border:1px solid;
+	height:20%;
+	width:40%;
 }
 
 #body{/*the code for the body part is here */
