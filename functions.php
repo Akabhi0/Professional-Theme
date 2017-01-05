@@ -34,9 +34,22 @@
   // applied action on this function 
   
   add_action('init','rt_menu_footer');
-  // after this we have to call the menu in header.php
+  // after this we have to call the menu in footer.php
   
+  //this is the methos to call the widget in the body.php
   
-  
-  
+  function Akabhi_widgets_init() {
+	//this is the widget part for the privay widget
+ 	register_sidebar( array(
+		'name'          => 'privacy widget', // this is the widget is used for //security and privacy
+		'before_widget' => '<div id="privacy">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<a href="">',
+		'after_title'   => '</a>',
+	) );
+    }
+	
+	//this is the action to calling the widget on the wordpress theam
+   add_action( 'widgets_init', 'Akabhi_widgets_init' );
+
 ?>

@@ -198,7 +198,29 @@ Use it to make something cool, have fun, and share what you've learned with othe
 			 height:30%;
 			 padding:0%;
 	         margin:0% 0%;
+			 background:#f8f8f8;
 		 }
+		 
+		#body #widget_part{
+			width:70%;
+			height:100%;
+			border:1px solid;
+			margin:0% 13%;
+			padding:0%;
+		 }
+		 
+		#widget  #widget_part li{
+			display:inline;
+            width:40%;
+			height:5%;
+            border:1px solid;
+            margin:0% 5%;
+			background:red;
+            padding:0%;			
+		 }
+		 
+		 
+		 
 		 
 		 
 		 
