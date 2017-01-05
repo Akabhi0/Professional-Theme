@@ -159,12 +159,46 @@ Use it to make something cool, have fun, and share what you've learned with othe
 			 height:50%;
 			 width:17%;
 			 float:right;
-			 margin:1% 7%;
+			 margin:1% 10%;
+		 }
+
+/* this is the part of the body */
+#body{
+	border:1px solid;
+	width:100%;
+	height:60%;
+	padding:0%;
+	margin:0% 0%;
+}		 
+	/* this is css for the body layout */	 
+	     #body ul{
+			 padding:0%;
+	         margin:0% 0%;
 		 }
 		 
+	     #body #javascript{
+			 border:1px solid;
+			 width:100%;
+			 height:40%; 
+			 padding:0%;
+	         margin:0% 0%;
+		 }
 		 
+		 #body #page{
+			 border:1px solid;
+			 width:100%;
+			 height:30%;
+			 padding:0%;
+	         margin:0% 0%;
+		 }
 		 
-		 
+		 #body #widget{
+			 border:1px solid;
+			 width:100%;
+			 height:30%;
+			 padding:0%;
+	         margin:0% 0%;
+		 }
 		 
 		 
 		 
