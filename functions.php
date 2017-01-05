@@ -6,7 +6,7 @@
     add_action('init','javascript_file');
 	
 	
-	//we are going to make theam logo costom
+   //we are going to make theam logo costom
   function theme_prefix_setup() {
 
 	 add_theme_support( 'custom-logo', array(
@@ -27,6 +27,16 @@
   add_action('init','rt_menu');
   // after this we have to call the menu in header.php
 
+  function rt_menu_footer(){
+	  //write menu code //function used regiter_nav_menu('position','string');
+	   register_nav_menu('footer','footer navigation');
+  }
+  // applied action on this function 
+  
+  add_action('init','rt_menu_footer');
+  // after this we have to call the menu in header.php
+  
+  
   
   
 ?>
