@@ -18,4 +18,15 @@
     add_action( 'after_setup_theme', 'theme_prefix_setup' );
   //this action is used to call the logo
 
+  function rt_menu(){
+ //write menu code //function used regiter_nav_menu('position','string');
+	   register_nav_menu('primary','Top navigation');
+  }
+  // applied action on this function 
+  
+  add_action('init','rt_menu');
+  // after this we have to call the menu in header.php
+
+  
+  
 ?>

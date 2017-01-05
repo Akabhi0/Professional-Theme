@@ -17,44 +17,7 @@
 	  
  	  <li id="menu"><!--this is the code for drop down menu--> 
 	    <ul  id="parent" class="nav nav-pills">
-			   <li> Home 
-				 <ul class ="child">
-				   <li><a href="#"> Nike </a></li>
-				   <li><a href="#"> Addidas </a></li>
-				   <li><a href="#"> New Balance </a></li>
-				   <li><a href="#"> Reebok </a></li>
-				 </ul>
-			   </li>
-			   <li> About Us
-			 
-				  <ul class ="child">
-				   <li><a href="#"> Nike </a></li>
-				   <li><a href="#"> Addidas </a></li>
-				   <li><a href="#"> New Balance </a></li>
-				   <li><a href="#"> Reebok </a></li>
-				 </ul>
-
-			   </li>
-
-			   <li> Contact Us 
-
-				 <ul class ="child">
-				   <li><a href="#"> Nike </a></li>
-				   <li><a href="#"> Addidas </a></li>
-				   <li><a href="#"> New Balance </a></li>
-				   <li><a href="#"> Reebok </a></li>
-				 </ul>
-
-			   </li>
-			   <li> Blog 
-				  <ul class ="child">
-				   <li><a href="#"> Nike </a></li>
-				   <li><a href="#"> Addidas </a></li>
-				   <li><a href="#"> New Balance </a></li>
-				   <li><a href="#"> Reebok </a></li>
-				 </ul>
-			   </li>
-			   <li> Product </li>
+			  <?php wp_nav_menu(array("location"=>"primary")); ?>
 			 </ul><!--code of drop dowm n=menu is ennde here -->
  	  </li>
 	  </ul>
