@@ -5,11 +5,24 @@
 		 <li id="page"></li>
 	     <li id="widget">
 		    <ul id="widget_part">
-		       <li> </li>
-			   <li> </li>
-			   <li> </li>
-			   <li> </li>
-		    </ul>
+			
+                  <li>
+	              <th><p><b>LATEST NEWS</b></p></th>  
+			      </li>
+				  
+				  <li>
+	              <th><p><b>RECENT PROJECTS</b></p></th>  
+			      </li>
+				  
+				  <li>
+	              <th><p><b>STAY IN TOUCH</b></p></th>  
+			      </li>
+				  
+				  <li>
+	              <th><p><b>SECURITY AND PRIVACY</b></p></th>  
+			      </li>
+				  
+			</ul>
 		 </li>
 	</div>
 <?php get_footer(); ?><!--this is the vode for adding the footer section in our body or index.php-->

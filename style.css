@@ -210,15 +210,21 @@ Use it to make something cool, have fun, and share what you've learned with othe
 		 }
 		 
 		#widget  #widget_part li{
-			display:inline;
-            width:40%;
-			height:5%;
-            border:1px solid;
-            margin:0% 5%;
-			background:red;
-            padding:0%;			
+			height:100%;
+			width:23%;
+			margin:0% 1%;
+			float:left;
+			list-style:none;
+			border:1px solid;
 		 }
 		 
+		#widget_part li p{
+			 margin:1% 1%;
+			 text-align:left;
+			 font-family:tahoma;
+			 font-size:15px;
+			 color:#888;
+		 }
 		 
 		 
 		 
