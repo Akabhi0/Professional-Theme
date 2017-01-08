@@ -41,15 +41,46 @@
   function Akabhi_widgets_init() {
 	//this is the widget part for the privay widget
  	register_sidebar( array(
-		'name'          => 'privacy widget', // this is the widget is used for //security and privacy
+		'name'          => 'news widget', // this is the widget is used for //security and privacy
 		'before_widget' => '<div id="privacy">',
 		'after_widget'  => '</div>',
-		'before_title'  => '<a href="">',
-		'after_title'   => '</a>',
+		'before_title'  =>'<div > '. wpb_postsbycategory() .'',//here i import the function of wpb_postsbycategory() from same file and placed int the widget 
+		'after_title'   => '</div>',
 	) );
     }
 	
 	//this is the action to calling the widget on the wordpress theam
    add_action( 'widgets_init', 'Akabhi_widgets_init' );
+   
+   
+   //adding the post categorie in news widget part 
+   function wpb_postsbycategory() {
+			// the query
+			$the_query = new WP_Query( array( 'category_name' => 'news', 'posts_per_page' => 3) ); 
+
+			// The Loop
+			if ( $the_query->have_posts() ) {
+				$string .= '<div id="one_one1"><ul>';
+				while ( $the_query->have_posts() ) {
+					$the_query->the_post();
+						// if no featured image is found
+						$string .= '<li><a href="' . get_the_permalink() .'" rel="bookmark">' . substr(get_the_excerpt(),0,70) .'</a></li>';
+						}
+				} else {
+				// no posts found
+			}
+			$string .= '</ul></div>';
+
+			return $string;
+
+			/* Restore original Post Data */
+			wp_reset_postdata();
+			}
+			// Add a shortcode
+			add_shortcode('categoryposts', 'wpb_postsbycategory');
+
+			// Enable shortcodes in text widgets
+			add_filter('widget_text', 'do_shortcode');
+
 
 ?>

@@ -6,8 +6,10 @@
 	     <li id="widget">
 		    <ul id="widget_part">
 			
-                  <li>
-	              <th><p><b>LATEST NEWS</b></p></th>  
+                  <li>  
+				  <th><p><b>RECENT NEWS</b></p></th> 
+				  <?php  if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('news widget') ): ?>
+	              <?php endif; ?>
 			      </li>
 				  
 				  <li>
