@@ -52,10 +52,10 @@
 	
 	register_sidebar( array(
 		'name'          => 'work widget', //this is the news widget 
-		'before_widget' => '<div id="work">',
+		'before_widget' => '<div>',
 		'after_widget'  => '</div>',
-		'before_title'  => '<a class="widget-title" href="">',
-		'after_title'   => '</a>',
+		'before_title'  => '<p>',
+		'after_title'   => '</p>',
 	) );
 	
     }
