@@ -58,6 +58,14 @@
 		'after_title'   => '</p>',
 	) );
 	
+	register_sidebar( array(
+		'name' => 'stay widget',//this is used for stay in touch
+		'before_widget' => '<div id="stay">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<p>',
+		'after_title'   => '</p>',
+	) );
+	
     }
 	
 	//this is the action to calling the widget on the wordpress theam

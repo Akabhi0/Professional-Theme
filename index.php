@@ -18,7 +18,8 @@
 			      </li>
 				  
 				  <li>
-	              <th><p><b>STAY IN TOUCH</b></p></th>  
+				  <?php  if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('stay widget') ): ?>
+	              <?php endif; ?>	
 			      </li>
 				  
 				  <li>
