@@ -42,28 +42,37 @@
   
   function Akabhi_widgets_init() {
 	//this is the widget part for the privay widget
+	
  	register_sidebar( array(
 		'name'          => 'news widget', // this is the widget is used for //security and privacy
-		'before_widget' => '<div id="privacy">',
+		'before_widget' => '<div>',
 		'after_widget'  => '</div>',
-		'before_title'  =>'<div > '. wpb_postsbycategory() .'',//here i import the function of wpb_postsbycategory() from same file and placed int the widget 
-		'after_title'   => '</div>',
+		'before_title'  => '<a href=" " class="widget-title">'.wpb_postsbycategory().'.',
+		'after_title'   => '</a>',
 	) );
 	
 	register_sidebar( array(
 		'name'          => 'work widget', //this is the news widget 
 		'before_widget' => '<div>',
 		'after_widget'  => '</div>',
-		'before_title'  => '<p>',
-		'after_title'   => '</p>',
+		'before_title'  => '<a href=" " class="widget-title">',
+		'after_title'   => '</a>',
 	) );
 	
 	register_sidebar( array(
 		'name' => 'stay widget',//this is used for stay in touch
 		'before_widget' => '<div id="stay">',
 		'after_widget'  => '</div>',
-		'before_title'  => '<p>',
-		'after_title'   => '</p>',
+		'before_title'  => '<a href="" class="widget-title">',
+		'after_title'   => '</a>',
+	) );
+	
+	register_sidebar( array(
+		'name'          => 'page widget', //this is the news widget 
+		'before_widget' => '<div id="page">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<a class="widget-title" href="">',
+		'after_title'   => '</a>',
 	) );
 	
     }

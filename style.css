@@ -241,6 +241,14 @@ Use it to make something cool, have fun, and share what you've learned with othe
 			 color:#888;
 		 }
 		 
+		 .widget-title{
+			 
+		 }
+		 
+		 .widget-title p{
+			 display:none;
+		 }
+		 
 		 #one_one1 a{
 			 font-size:13px;
 			 font-family:tahona;
@@ -255,9 +263,6 @@ Use it to make something cool, have fun, and share what you've learned with othe
 			 color:#993408;
 		 }
 		 
-		 #body #one_one1 ul{
-			 margin:5% 0%;
-		 }
 		 #body #one_one1 li{
 			 width:100%;
 			 height:27%;
@@ -302,6 +307,27 @@ Use it to make something cool, have fun, and share what you've learned with othe
 			margin:-1% 3%;
 			height:20%;
 		}
+		
+		/* this is the css which is used to write widget of 4 */
+		.menu-pages-container{
+			width:100%;
+			margin:0% 0%;
+			padding:0%;
+		}
+		
+		#widget .menu-pages-container #menu-pages{
+			margin:3% 0%;
+		}
+		
+		#widget .menu-pages-container #menu-pages li{
+			margin:0% 0%;
+			width:100%;
+			padding:0%;
+			background: none;
+            text-align: left;
+		}
+		
+		
 		
 		
 		
