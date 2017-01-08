@@ -13,7 +13,9 @@
 			      </li>
 				  
 				  <li>
-	              <th><p><b>RECENT PROJECTS</b></p></th>  
+	              <th><p><b>RECENT PROJECTS</b></p></th>
+                  <?php  if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('work widget') ): ?>
+	              <?php endif; ?>				  
 			      </li>
 				  
 				  <li>

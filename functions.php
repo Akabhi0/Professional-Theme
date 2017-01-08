@@ -5,6 +5,8 @@
   //appling action on this function
     add_action('init','javascript_file');
 	
+	//adding thumbmail for images
+    add_theme_support( 'post-thumbnails' );	
 	
    //we are going to make theam logo costom
   function theme_prefix_setup() {
@@ -47,6 +49,15 @@
 		'before_title'  =>'<div > '. wpb_postsbycategory() .'',//here i import the function of wpb_postsbycategory() from same file and placed int the widget 
 		'after_title'   => '</div>',
 	) );
+	
+	register_sidebar( array(
+		'name'          => 'work widget', //this is the news widget 
+		'before_widget' => '<div id="work">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<a class="widget-title" href="">',
+		'after_title'   => '</a>',
+	) );
+	
     }
 	
 	//this is the action to calling the widget on the wordpress theam
