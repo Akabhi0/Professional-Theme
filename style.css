@@ -128,7 +128,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 			width:70%;
 			height:100%;
 			border:1px solid;
-			margin:0% 13%;
+			margin:0% 15%;
 			padding:0%;
 		 }
 		 
@@ -411,6 +411,61 @@ Use it to make something cool, have fun, and share what you've learned with othe
 		  font-family:georgian;  
 		  margin:0% 2%;
   }
+  
+  #block1 img{
+	  padding:1%;
+	  margin:0% 0%;
+  }
+  
+ #jquery #block1{
+	  background:#fff;
+  }
+  
+  #block1 h4{
+	  text-align:left;
+	  margin:1% 5%;
+	  float:left;
+	  padding:0%;
+	  height:auto;
+	  width:70%;
+  }
+  
+  #jquery #block2{
+	background:#fff;  
+  }
+  
+   #block2 img{
+	  padding:1%;
+	  margin:0% 0%;
+  }
+  
+   #block2 h4{
+	  text-align:left;
+	  margin:1% 5%;
+	  float:left;
+	  padding:0%;
+	  height:auto;
+	  width:70%;
+  }
+  
+  #jquery #block3{
+	  background:#fff;
+  }
+  
+   #block3 img{
+	  padding:1%;
+	  margin:0% 0%;
+  }
+  
+   #block3 h4{
+	  text-align:left;
+	  margin:1% 5%;
+	  float:left;
+	  padding:0%;
+	  height:auto;
+	  width:70%;
+  }
+  
   
 /*the code of css for body is going to over here */	 
 	    

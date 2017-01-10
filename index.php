@@ -20,26 +20,26 @@
 			    foreach( $post as $key )
 			    ?>
 				
-			    <li><?php $post1 = $post["page1"];
+			    <li id="block1">
+				    <?php $post1 = $post["page1"];
 			         echo get_the_post_thumbnail($post1); // <!--this is the code for the importing the backgorund image-->
-                          $dis = get_page($post1);					
-					echo  $dis->post_title;
-					echo  substr($dis -> post_content,0,130);
-					?>
+                          $dis = get_page($post1); ?>					
+					<h4><?php echo  $dis->post_title; ?></h4>
+					<p><?php echo  substr($dis -> post_content,0,130); ?></p>
 		        </li>
 				
-			    <li><?php $post1 = $post["page2"];
+			    <li id="block2"><?php $post1 = $post["page2"];
 			         echo get_the_post_thumbnail($post1); // <!--this is the code for the importing the backgorund image-->				
-					 $dis = get_page($post1);					
-					echo  $dis->post_title;
-					echo  substr($dis -> post_content,0,130);?>
+					 $dis = get_page($post1); ?>	
+					<h4><?php echo  $dis->post_title; ?></h4>
+					<p><?php echo  substr($dis -> post_content,0,130); ?></p>
 				</li>
 				
-			    <li><?php $post1 = $post["page3"];
+			    <li id="block3"><?php $post1 = $post["page3"];
 			         echo get_the_post_thumbnail($post1); // <!--this is the code for the importing the backgorund image-->				
-					 $dis = get_page($post1);					
-					echo  $dis->post_title;
-					echo  substr($dis -> post_content,0,130);?>
+					 $dis = get_page($post1);	?>				
+				     <h4><?php echo  $dis->post_title; ?></h4>
+					 <p><?php echo  substr($dis -> post_content,0,130); ?></p>
 				</li>
 				
 			 </ul>
