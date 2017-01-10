@@ -21,16 +21,25 @@
 			    ?>
 				
 			    <li><?php $post1 = $post["page1"];
-			         echo get_the_post_thumbnail($post1); ?> <!--this is the code for the importing the backgorund image-->
-					
+			         echo get_the_post_thumbnail($post1); // <!--this is the code for the importing the backgorund image-->
+                          $dis = get_page($post1);					
+					echo  $dis->post_title;
+					echo  substr($dis -> post_content,0,130);
+					?>
 		        </li>
 				
 			    <li><?php $post1 = $post["page2"];
-			         echo get_the_post_thumbnail($post1); ?> <!--this is the code for the importing the backgorund image-->				
+			         echo get_the_post_thumbnail($post1); // <!--this is the code for the importing the backgorund image-->				
+					 $dis = get_page($post1);					
+					echo  $dis->post_title;
+					echo  substr($dis -> post_content,0,130);?>
 				</li>
 				
 			    <li><?php $post1 = $post["page3"];
-			         echo get_the_post_thumbnail($post1); ?> <!--this is the code for the importing the backgorund image-->				
+			         echo get_the_post_thumbnail($post1); // <!--this is the code for the importing the backgorund image-->				
+					 $dis = get_page($post1);					
+					echo  $dis->post_title;
+					echo  substr($dis -> post_content,0,130);?>
 				</li>
 				
 			 </ul>
