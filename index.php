@@ -1,7 +1,10 @@
 <?php get_header(); ?><!--this is the vode for adding the header section in our body or index.php-->
 	<div id="body">
 	  <ul>
-	    <li id="javascript"> javascript </li><!-- this is the part where feature image display here -->
+	    <li id="javascript"> javascript
+         
+		</li><!-- this is the part where feature image display here -->
+		
 	    <li id="jquery">
              <center><div id="sub_pages"><!--this is the part where sub pages are going to show-->
 			 <ul>
@@ -9,9 +12,26 @@
 				<?php  if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('sub-menu widget') ): ?>
 	            <?php endif; ?>
 				</li>
-			    <li> block2 </li>
-			    <li> block3 </li>
-			    <li> block4 </li>
+				
+				
+				
+				<?php
+                $post = array( "page1" => 38 ,"page2" => 52, "page3" => 56) ;
+			    foreach( $post as $key )
+			    ?>
+				
+			    <li><?php $post1 = $post["page1"];
+			         echo $post1; ?>
+		        </li>
+				
+			    <li><?php $post1 = $post["page2"];
+			       echo $post1; ?>				
+				</li>
+				
+			    <li><?php $post1 = $post["page3"];
+			       echo $post1; ?>				
+				</li>
+				
 			 </ul>
 			 </div></center>
 		</li><!-- this is the part where child page display here here -->
