@@ -41,7 +41,7 @@
   //this is the methos to call the widget in the body.php
   
   function Akabhi_widgets_init() {
-	//this is the widget part for the privay widget
+	//this is the widget part for the news widget
 	
  	register_sidebar( array(
 		'name'          => 'news widget', // this is the widget is used for //security and privacy
@@ -52,7 +52,7 @@
 	) );
 	
 	register_sidebar( array(
-		'name'          => 'work widget', //this is the news widget 
+		'name'          => 'work widget', //this is the logo and partner widget 
 		'before_widget' => '<div>',
 		'after_widget'  => '</div>',
 		'before_title'  => '<a href=" " class="widget-title">',
@@ -68,8 +68,16 @@
 	) );
 	
 	register_sidebar( array(
-		'name'          => 'page widget', //this is the news widget 
+		'name'          => 'page widget', //this is the security and privacy widget 
 		'before_widget' => '<div id="page">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<a class="widget-title" href="">',
+		'after_title'   => '</a>',
+	) );
+	
+	register_sidebar( array(
+		'name'          => 'sub-menu widget', //this is the sub-menu widget 
+		'before_widget' => '<div id="sub">',
 		'after_widget'  => '</div>',
 		'before_title'  => '<a class="widget-title" href="">',
 		'after_title'   => '</a>',
