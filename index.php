@@ -5,7 +5,10 @@
 	    <li id="jquery">
              <center><div id="sub_pages"><!--this is the part where sub pages are going to show-->
 			 <ul>
-			    <li> block 1</li>
+			    <li id="no1"> 
+				<?php  if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('sub-menu widget') ): ?>
+	            <?php endif; ?>
+				</li>
 			    <li> block2 </li>
 			    <li> block3 </li>
 			    <li> block4 </li>

@@ -384,8 +384,43 @@ Use it to make something cool, have fun, and share what you've learned with othe
      display:inline;
      height:100%;	 
    }
+  
+  #sub .menu-sub-menu-container .menu{
+	  margin:0% 0%;
+	  padding:0%;
+	  width:100%;
+	  height:100%;
+  }
+  
+  #sub .menu-sub-menu-container .menu li{
+	  display:inline;
+	  width:100%;
+	  height:15%;
+  }
+  
+  #sub .menu-sub-menu-container .menu li:hover{
+			background:#a55518;
+		}
+  
+  #sub .menu-sub-menu-container .menu li a{
+	      float:left;
+	      color:#fff;
+		  text-decoration:none;  
+		  font-size:15px;
+		  font-weight:bold;
+		  font-family:georgian;  
+		  margin:0% 2%;
+  }
+  
 /*the code of css for body is going to over here */	 
 	    
+		
+		
+		
+		
+		
+		
+		
 		
 		
 		
