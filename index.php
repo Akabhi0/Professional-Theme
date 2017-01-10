@@ -16,20 +16,21 @@
 				
 				
 				<?php
-                $post = array( "page1" => 38 ,"page2" => 52, "page3" => 56) ;
+                $post = array( "page1" => 38 ,"page2" => 52, "page3" => 54) ;
 			    foreach( $post as $key )
 			    ?>
 				
 			    <li><?php $post1 = $post["page1"];
-			         echo $post1; ?>
+			         echo get_the_post_thumbnail($post1); ?> <!--this is the code for the importing the backgorund image-->
+					
 		        </li>
 				
 			    <li><?php $post1 = $post["page2"];
-			       echo $post1; ?>				
+			         echo get_the_post_thumbnail($post1); ?> <!--this is the code for the importing the backgorund image-->				
 				</li>
 				
 			    <li><?php $post1 = $post["page3"];
-			       echo $post1; ?>				
+			         echo get_the_post_thumbnail($post1); ?> <!--this is the code for the importing the backgorund image-->				
 				</li>
 				
 			 </ul>
