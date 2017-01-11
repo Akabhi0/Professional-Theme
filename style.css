@@ -467,17 +467,52 @@ Use it to make something cool, have fun, and share what you've learned with othe
   }
   
   #pic{
+	  float:left;
 	  width:70%;
 	  height:95%;
 	  background:#fff;
-	  margin:0.7% 0%;
+	  margin:0.7% 15%;
 	  padding:0%;
   }
   
   #pic img{
+	  position:relative;
 	  height:100%;
 	  width:100%;
 	  padding:2%;
+	  float:left;  
+  }
+  
+  #pic h3{
+	  position:absolute;
+	  text-align:right;
+	  margin:1% 3%;
+	  padding:3%;
+	  z-index:15;
+	  color:#fff;
+  }
+  
+  #pic h5{
+	  color:#fff;
+	  position:absolute;
+	  text-align:right;
+	  margin:15% 3%;
+	  padding:0%;
+	  z-index:15;
+  }
+  #write{
+	  height:100%;
+	  width:100%;
+  }
+  
+  #back{
+	  position:absolute;
+	  height:48%;
+	  width:30%;
+	  background:black;
+      z-index:10;
+      opacity:0.6;	
+      margin:1.5% 38.5%;	  
   }
 /*the code of css for body is going to over here */	 
 	    

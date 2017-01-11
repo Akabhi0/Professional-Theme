@@ -2,23 +2,29 @@
 	<div id="body">
 	  <ul>
 	    <li id="javascript"> 
-                <center><div id="pic">
+                <div id="pic">
 			    <?php 
 				    $args = array(
                    'post__in' => array(131)
                     );
 						$lastposts = get_posts( $args );
 						if ( $lastposts ) {
-							foreach ( $lastposts as $post ) {
-								if ( has_post_thumbnail()){
+							foreach ( $lastposts as $post ) { ?>
+							    
+								
+								<div id="write"><div id="back"><h3><?php the_title();//this is the code to show thw title of post ?></h3>
+				                <h5><?php echo substr(get_the_excerpt(),0,200); //this is the code which take the content from post?> </h5></div>
+								
+								<?php if ( has_post_thumbnail()){
 	                                 the_post_thumbnail();
-                                }
-							}
+                                }?>
+								</div>
+							<?php }
 				        }
 					
 				?>
 			
-                </div></center>			   
+                </div>			   
 		</li><!-- this is the part where feature image display here -->
 				
 	    <li id="jquery">
