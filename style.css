@@ -10,6 +10,7 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 
+
 #header{
 	width:100%;
 	height:auto;
@@ -515,9 +516,546 @@ Use it to make something cool, have fun, and share what you've learned with othe
       margin:1.5% 38.5%;	  
   }
 /*the code of css for body is going to over here */	 
-	    
+	 
+
+
+	 
+/* this is th part for responsive web development */		
+@media screen and (min-width: 0px) and (max-width: 380px){
+
+#header{
+	width:100%;
+	height:auto;
+	background:url("image/body-map.jpg");
+}
+			#main{
+			 height:15%;
+			 margin:0% 0%;	
+			 padding:0%;
+			}
+			
+			li{
+			list-style:none;
+			margin:2% 0%;
+			padding:0%;
+			}
+
+			#header #logo{
+			  border:1px solid;
+              float:left;
+              margin:3% 30%;
+              padding:0%;
+              height:40%;
+			  width:40%;			  			  
+			}
+			
+			#logo_pic{
+				height:100%;
+				width:100%;
+			}
+			
+			#menu{
+				margin:0% 0%;
+				width:100%;
+			}
+			
+			.nav{
+				margin:0% 0%;
+				padding:0%;
+			}
+			
+			.menu {
+				width:100%;
+				padding:0%;
+				margin:0% 0%;
+			}
+			
+			.menu li a{
+				margin:0% 0%;
+				padding:0%;
+			}
+			
+			.menu > li{
+			
+			width:16.5%;
+			margin:0% 0%;
+			padding:0%;
+			cursor:pointer;
+			text-align:center;
+			background:#efdba7;
+			font:bold;
+			
+			}
+			
+			.menu  li a{
+			text-decoration:none;
+            font-size:11.5px;			
+			}
+
+			.sub-menu >li{
+			padding:0%;
+			font-size:11.5px;
+			width:100%;
+			}
+			
+			.sub-menu{
+			z-index:10;
+            padding:0%;
+			margin:0% 0%;
+			display:none;
+			width:100%;				
+			}
+			
+			.sub-menu li{
+				z-index:10;
+				width:100%;
+				padding:0%;
+				margin:0% 0%;
+			}
+
+		    .sub-menu li a{
+			text-align:center;
+			font-size:80%;
+            padding:0%;
+            margin:0% 0%;			
+			}	
+			
+			.sub-menu > li:hover{
+			background:black;
+			opacity: 0.7;
+			padding:0%;
+            margin:0% 0%;
+			}
+
+			.sub-menu > li a{
+			color:white;
+			padding:0%;
+            margin:0% 0%;
+			text-align:center;
+			text-decoration:none;
+			}
+			
+/* header css finished here */			
+			
+#footer{/* the code for footer part is here */
+	width:100%;
+	border:1px solid;
+	height:auto;
+	background:url("image/body-map.jpg");
+}
+         #footer1{   /*this is the part of footer1 css */
+			   height:40%;
+			   border:1px solid;
+		   }
+		   
+		  #footer1 ul{
+			 padding:0%;
+	         margin:0% 0%;
+		  }
+		 
+		 #footer #widget{
+			 border:1px solid;
+			 width:100%;
+			 height:100%;
+			 padding:0%;
+	         margin:0% 0%;
+			 background:#f8f8f8;
+		 }
+		 
+		#footer #widget_part{
+			width:70%;
+			height:100%;
+			border:1px solid;
+			margin:0% 15%;
+			padding:0%;
+		 }
+		 
+		#widget  #widget_part li{
+			height:100%;
+			width:23%;
+			margin:0% 1%;
+			float:left;
+			list-style:none;
+			border:1px solid;
+		 }
+		 
+		 #footer #widget #pagess li{
+			 height:auto;
+		 }
+		 
+		#widget a{
+			 text-decoration-style:dashed;
+			 font-weight:bold;
+			 margin:1% 3%;
+			 text-align:left;
+			 font-family:tahoma;
+			 font-size:15px;
+			 color:#888;
+		}
 		
+		.cat-item a{
+			display:none;
+		}
 		
+		#widget_part li p{
+			 margin:1% 3%;
+			 text-align:left;
+			 font-family:tahoma;
+			 font-size:15px;
+			 color:#888;
+		 }
+		 
+		 .widget-title{
+			 
+		 }
+		 
+		 .widget-title p{
+			 display:none;
+		 }
+		 
+		 #one_one1 a{
+			 font-size:13px;
+			 font-family:tahona;
+			 float:left;
+			 color:#888;
+			 font-weight:bold;
+			 text-decoration:none;
+			 padding:2%;
+		 }
+		 
+		 #one_one1 a:hover{
+			 color:#993408;
+		 }
+		 
+		 #footer #one_one1 li{
+			 width:100%;
+			 height:27%;
+			 padding:0%;
+			 margin:0% 0%;
+		 }
+		 
+		 #privacy ul{
+			display:null;
+		 }
+		 
+		 .cat-item {
+			 display:none;
+		 }
+		 
+		 /* this is the widget part2(logo section css) */
+		#footer #logo{
+		  width:100%;
+          margin:0% 0%;
+          padding:0%;
+        		  
+		}
+		 
+	    #footer #logo	li{
+			display:inline;
+			width:100%;
+			margin:1% 0%;
+            padding:0%;
+			height:27%;
+		} 
+		
+		#footer #logo	li img{
+			margin:0% 0%;
+            padding:0%;	
+		}
+		 
+		/* this for the social media plugin */
+		
+		#footer .socialmedia-buttons a{
+			float:left;
+			width:100%;
+			margin:-1% 3%;
+			height:20%;
+		}
+		
+		/* this is the css which is used to write widget of 4 */
+		.menu-pages-container{
+			width:100%;
+			margin:0% 0%;
+			padding:0%;
+		}
+		
+		#widget .menu-pages-container #menu-pages{
+			margin:3% 0%;
+		}
+		
+		#widget .menu-pages-container #menu-pages li{
+			margin:0% 0%;
+			width:100%;
+			padding:0%;
+			background: none;
+            text-align: left;
+		}
+
+
+           #footer2{   /*this is the part of footer2 css */
+			   height:15%;
+			   border:1px solid;
+		   }
+		   
+           #footer2 ul{
+			   margin:1% 0%;
+		   }
+   /* menu of footer */
+            #menu_footer{
+				margin:0% -2%;
+				float:left;
+				width:50%;
+			}
+			
+			#footer .menu{
+				float:left;
+				width:100%;
+				margin:0% 0%;
+			}
+			
+			#footer .menu > li{
+			width:15%;
+			margin:0% 0%;
+			padding:1%;
+			cursor:pointer;
+			text-align:center;
+			background:#efdba7;
+			font:bold;
+			text-decoration:none;
+			}
+
+			#footer .menu li a{
+			text-decoration:none;	
+			}
+			
+			#footer .sub-menu li{
+				display:none;
+			}
+			#footer .sub-menu >li{
+			padding:1%;
+			font-size:15px;
+			width:100%;
+			}
+
+			#footer .sub-menu > li:hover{
+			background:black;
+			opacity: 0.7;
+			}
+
+			#footer .sub-menu > li a{
+			color:white;
+			text-align:center;
+			text-decoration:none;
+			}
+
+  /* end of menu of footer */
+         
+		 /* start of company policy */
+            #footer #link{
+			position:absolute;
+			margin:3% 3%;
+			float:left;
+			padding:0%;
+		}
+         /* end of company policy */
+		 
+		 /* footer logo pic */
+		 #footer #logo_pic{
+			 height:50%;
+			 width:17%;
+			 float:right;
+			 margin:1% 10%;
+		 }
+
+/* this is the part of the body */
+#body{
+	border:1px solid;
+	width:100%;
+	height:auto;
+	padding:0%;
+	margin:0% 0%;
+}		 
+ #body ul{
+	 padding:0%;
+	 margin:0% 0%;
+ }
+   #javascript{
+	   padding:0%;
+	   margin:0% 0%;
+	   width:100%;
+	   height:60%;
+	   background:#949599;
+	   border:1px solid; 
+   }
+   
+   #jquery{
+	   background:#fff;
+	   padding:0%;
+	   margin:0% 0%;
+	   width:100%;
+	   height:40%;
+	   border:1px solid;
+   }
+
+   #sub_pages{
+	   background:red;
+	   height:95%;
+	   padding:0%;
+	   margin:0.5% 0%;
+	   width:70%;
+   }
+   
+   #sub_pages ul{
+	   margin:0% 0%;
+	   padding:0%;
+	   width:100%;
+	   height:100%;
+   }
+   
+   #sub_pages  li{
+	 background:#ebebeb;
+	 float:left;
+	 margin:0% 0%;
+     padding:0%;
+     border:1px solid;
+     width:25%;
+     display:inline;
+     height:100%;	 
+   }
+  
+  #sub .menu-sub-menu-container .menu{
+	  margin:0% 0%;
+	  padding:0%;
+	  width:100%;
+	  height:100%;
+  }
+  
+  #sub .menu-sub-menu-container .menu li{
+	  display:inline;
+	  width:100%;
+	  height:15%;
+  }
+  
+  #sub .menu-sub-menu-container .menu li:hover{
+			background:#a55518;
+		}
+  
+  #sub .menu-sub-menu-container .menu li a{
+	      float:left;
+	      color:#fff;
+		  text-decoration:none;  
+		  font-size:15px;
+		  font-weight:bold;
+		  font-family:georgian;  
+		  margin:0% 2%;
+  }
+  
+  #block1 img{
+	  padding:1%;
+	  margin:0% 0%;
+  }
+  
+ #jquery #block1{
+	  background:#fff;
+  }
+  
+  #block1 h4{
+	  text-align:left;
+	  margin:1% 5%;
+	  float:left;
+	  padding:0%;
+	  height:auto;
+	  width:70%;
+  }
+  
+  #jquery #block2{
+	background:#fff;  
+  }
+  
+   #block2 img{
+	  padding:1%;
+	  margin:0% 0%;
+  }
+  
+   #block2 h4{
+	  text-align:left;
+	  margin:1% 5%;
+	  float:left;
+	  padding:0%;
+	  height:auto;
+	  width:70%;
+  }
+  
+  #jquery #block3{
+	  background:#fff;
+  }
+  
+   #block3 img{
+	  padding:1%;
+	  margin:0% 0%;
+  }
+  
+   #block3 h4{
+	  text-align:left;
+	  margin:1% 5%;
+	  float:left;
+	  padding:0%;
+	  height:auto;
+	  width:70%;
+  }
+  
+  #pic{
+	  float:left;
+	  width:70%;
+	  height:95%;
+	  background:#fff;
+	  margin:0.7% 15%;
+	  padding:0%;
+  }
+  
+  #pic img{
+	  position:relative;
+	  height:100%;
+	  width:100%;
+	  padding:2%;
+	  float:left;  
+  }
+  
+  #pic h3{
+	  position:absolute;
+	  text-align:right;
+	  margin:1% 3%;
+	  padding:3%;
+	  z-index:15;
+	  color:#fff;
+  }
+  
+  #pic h5{
+	  color:#fff;
+	  position:absolute;
+	  text-align:right;
+	  margin:15% 3%;
+	  padding:0%;
+	  z-index:15;
+  }
+  #write{
+	  height:100%;
+	  width:100%;
+  }
+  
+  #back{
+	  position:absolute;
+	  height:48%;
+	  width:30%;
+	  background:black;
+      z-index:10;
+      opacity:0.6;	
+      margin:1.5% 38.5%;	  
+  }
+/*the code of css for body is going to over here */	 
+	
+
+}		
 		
 		
 		
