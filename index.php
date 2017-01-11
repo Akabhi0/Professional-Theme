@@ -1,14 +1,30 @@
 <?php get_header(); ?><!--this is the vode for adding the header section in our body or index.php-->
 	<div id="body">
 	  <ul>
-	    <li id="javascript"> javascript
-         
+	    <li id="javascript"> 
+                <center><div id="pic">
+			    <?php 
+				    $args = array(
+                   'post__in' => array(131)
+                    );
+						$lastposts = get_posts( $args );
+						if ( $lastposts ) {
+							foreach ( $lastposts as $post ) {
+								if ( has_post_thumbnail()){
+	                                 the_post_thumbnail();
+                                }
+							}
+				        }
+					
+				?>
+			
+                </div></center>			   
 		</li><!-- this is the part where feature image display here -->
-		
+				
 	    <li id="jquery">
              <center><div id="sub_pages"><!--this is the part where sub pages are going to show-->
 			 <ul>
-			    <li id="no1"> 
+			    <li id="no1">
 				<?php  if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('sub-menu widget') ): ?>
 	            <?php endif; ?>
 				</li>

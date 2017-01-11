@@ -466,7 +466,19 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	  width:70%;
   }
   
+  #pic{
+	  width:70%;
+	  height:95%;
+	  background:#fff;
+	  margin:0.7% 0%;
+	  padding:0%;
+  }
   
+  #pic img{
+	  height:100%;
+	  width:100%;
+	  padding:2%;
+  }
 /*the code of css for body is going to over here */	 
 	    
 		
