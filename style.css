@@ -599,6 +599,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 			}
 			
 			.sub-menu{
+		    z-index:5;		
 			z-index:10;
             padding:0%;
 			margin:0% 0%;
@@ -607,6 +608,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 			}
 			
 			.sub-menu li{
+				z-index:5;
 				z-index:10;
 				width:100%;
 				padding:0%;
@@ -617,7 +619,8 @@ Use it to make something cool, have fun, and share what you've learned with othe
 			text-align:center;
 			font-size:80%;
             padding:0%;
-            margin:0% 0%;			
+            margin:0% 0%;	
+            z-index:5;			
 			}	
 			
 			.sub-menu > li:hover{
@@ -625,9 +628,11 @@ Use it to make something cool, have fun, and share what you've learned with othe
 			opacity: 0.7;
 			padding:0%;
             margin:0% 0%;
+			z-index:5;
 			}
 
 			.sub-menu > li a{
+			z-index:5;
 			color:white;
 			padding:0%;
             margin:0% 0%;
@@ -877,13 +882,15 @@ Use it to make something cool, have fun, and share what you've learned with othe
 }		 
  #body ul{
 	 padding:0%;
-	 margin:0% 0%;
+	 margin:5% 0%;
  }
    #javascript{
+	   z-index:-1;
 	   padding:0%;
 	   margin:0% 0%;
 	   width:100%;
-	   height:60%;
+	   height:40%;
+	   position:relative;
 	   background:#949599;
 	   border:1px solid; 
    }
@@ -1005,16 +1012,18 @@ Use it to make something cool, have fun, and share what you've learned with othe
   }
   
   #pic{
+	  position:absolute;
+	  z-index:1;
 	  float:left;
-	  width:70%;
+	  width:95%;
 	  height:95%;
 	  background:#fff;
-	  margin:0.7% 15%;
+	  margin:1.5% 2%;
 	  padding:0%;
   }
   
   #pic img{
-	  position:relative;
+	  z-index:1;
 	  height:100%;
 	  width:100%;
 	  padding:2%;
@@ -1039,11 +1048,13 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	  z-index:15;
   }
   #write{
+	  z-index:-10;
 	  height:100%;
 	  width:100%;
   }
   
   #back{
+	  display:none;
 	  position:absolute;
 	  height:48%;
 	  width:30%;
