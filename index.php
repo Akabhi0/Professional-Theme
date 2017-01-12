@@ -59,9 +59,9 @@
 				
 			    <li id="block3"><?php $post1 = $post["page3"];
 			         echo get_the_post_thumbnail($post1); // <!--this is the code for the importing the backgorund image-->				
-					 $dis = get_page($post1);	?>				
+					 $dis = get_page($post1);?>				
 				     <h4><?php echo  $dis->post_title; ?></h4>
-					 <p><?php echo  substr($dis -> post_content,0,130); ?></p>
+					 <p><?php echo  substr($dis -> post_content,0,130);  ?></p>
 				</li>
 				
 			 </ul>
