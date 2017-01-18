@@ -3,12 +3,13 @@
 	  <ul>
 	    <li id="javascript"> 
                 <div id="pic">
-			    <?php 
-				    $args = array(
-                   'post__in' => array(131)
+			    <?php  
+				   /* $args = array(
+                   'post__in' => array(154,127,129)
                     );
 						$lastposts = get_posts( $args );
-							foreach ( $lastposts as $post ) { ?>
+							foreach ( $lastposts as $post ) { 
+							if($post == 154 || 131 || 129 ){  */?>
 							<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 								  <!-- Indicators -->
 								  <ol class="carousel-indicators">
@@ -20,20 +21,36 @@
 								  <!-- Wrapper for slides -->
 								  <div class="carousel-inner" role="listbox">
 									<div class="item active">
-									  <?php if ( has_post_thumbnail()){
-	                                 the_post_thumbnail();
-                                     }?>
+									    <?php /* if ( has_post_thumbnail()){
+	                                             the_post_thumbnail();
+							              } */
+									     ?>
 									  <div class="carousel-caption">
 										...
 									  </div>
 									</div>
 									<div class="item">
-									  <img src="..." alt="...">
+									   <?php 
+									        /* if ( has_post_thumbnail()){
+	                                             the_post_thumbnail();
+						                       	 } */
+									 ?>
 									  <div class="carousel-caption">
 										...
 									  </div>
 									</div>
-									...
+								    
+									<div class="item">
+									   <?php 
+									        /* if ( has_post_thumbnail()){
+	                                             the_post_thumbnail();
+						                       	} } */
+									 ?>
+									  <div class="carousel-caption">
+										...
+									  </div>
+									</div>
+									
 								  </div>
 
 								  <!-- Controls -->
@@ -47,7 +64,7 @@
 								  </a>
 								</div>    
 																
-							<?php }?>
+							<?php /*} */ ?>
 			
                 </div>			   
 		</li><!-- this is the part where feature image display here -->
@@ -63,32 +80,20 @@
 				
 				
 				<?php
-                $post = array( "page1" => 38 ,"page2" => 52, "page3" => 54) ;
-			    foreach( $post as $key )
+                $post = array( 38 ,52, 54) ;
+			    foreach( $post as $key ){
+				if($key == 38 || $key == 52 || $key == 54){
 			    ?>
 				
 			    <li id="block1">
-				    <?php $post1 = $post["page1"];
-			         echo get_the_post_thumbnail($post1); // <!--this is the code for the importing the backgorund image-->
-                          $dis = get_page($post1); ?>					
+				    <?php
+			         echo get_the_post_thumbnail($key); // <!--this is the code for the importing the backgorund image-->
+                          $dis = get_page($key); ?>					
 					<h4><?php echo  $dis->post_title; ?></h4>
-					<?php echo  substr($dis -> post_content,0,130); ?>
+				<?php echo  substr($dis -> post_content,0,130); } } ?>
 		        </li>
 				
-			    <li id="block2"><?php $post1 = $post["page3"];
-			         echo get_the_post_thumbnail($post1); // <!--this is the code for the importing the backgorund image-->				
-					 $dis = get_page($post1); ?>	
-					<h4><?php echo  $dis->post_title; ?></h4>
-					<?php echo  substr($dis -> post_content,0,130); ?>
-				</li>
-				
-			    <li id="block3"><?php $post1 = $post["page2"];
-			         echo get_the_post_thumbnail($post1); // <!--this is the code for the importing the backgorund image-->				
-					 $dis = get_page($post1);?>				
-				     <h4><?php echo  $dis->post_title; ?></h4>
-					 <?php echo  substr($dis -> post_content,0,130);  ?>
-				</li>
-				
+			    
 			 </ul>
 			 </div></center>
 		</li><!-- this is the part where child page display here here -->

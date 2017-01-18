@@ -21,29 +21,3 @@ jQuery(document).ready(function(){
 	 });
 });
 
-jQuery(document).ready(function(){
-	jQuery("#menu-item-77").hover(function(){
-			jQuery("#block2").css({
-				'background':'red'
-			});
-		});
-	jQuery("#menu-item-77").mouseout(function(){
-		jQuery("#block2").css({
-	      'background':'#fff'		
-		});
-	 });
-});
-
-
-jQuery(document).ready(function(){
-	jQuery("#menu-item-78").hover(function(){
-			jQuery("#block3").css({
-				'background':'red'
-			});
-		});
-	jQuery("#menu-item-78").mouseout(function(){
-		jQuery("#block3").css({
-	      'background':'#fff'		
-		});
-	 });
-});
