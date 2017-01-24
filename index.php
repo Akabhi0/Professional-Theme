@@ -3,49 +3,49 @@
 	  <ul>
 	    <li id="javascript"> 
                 <div id="pic">
-							<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-								  <!-- Indicators -->
-								  <ol class="carousel-indicators">
-									<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-									<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-									<li data-target="#carousel-example-generic" data-slide-to="2"></li>
-								  </ol>
-
-								  <!-- Wrapper for slides -->
-								  <div class="carousel-inner" role="listbox">
-									<div class="item active">
-									  <div class="carousel-caption">
-										...
-									  </div>
-									</div>
-									<div class="item">
-									  <div class="carousel-caption">
-										...
-									  </div>
-									</div>
-								    
-									<div class="item">
-									  <div class="carousel-caption">
-										...
-									  </div>
-									</div>
-									
-								  </div>
-
-								  <!-- Controls -->
-								  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-									<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-									<span class="sr-only">Previous</span>
-								  </a>
-								  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-									<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-									<span class="sr-only">Next</span>
-								  </a>
-								</div>    
-																
-						
+				<?php 
+	            $htitle = get_theme_mod( 'mwsmall_home_title' );
+	            $home_text = get_theme_mod( 'mwsmall_home_text' );
+	            if ( !empty( $htitle ) || !empty( $home_text ) ) {
+                ?>
+				<section class="home_text text-center col-lg-12 col-md-12 col-sm-12">
+					<?php if ( !empty( $htitle ) ) { ?>
+					<h2><?php echo $htitle; ?></h2>
+					<?php } ?>
+					<?php if ( !empty( $home_text ) ) { ?>
+					<p><?php echo $home_text; ?></p>
+					<?php } ?>
+				</section><?php } ?>
+				
+				<section id="primary" class="container content-area col-lg-9 col-md-9 col-sm-8">
+	            <div id="content" class="site-content" role="main">
+		        <?php 
+			        $hide_slider = get_theme_mod( 'hide_slider_post' );
+			        if ( ( $hide_slider == '' && is_front_page() ) || ( $hide_slider == '' && is_home() ) ) {
+				    get_template_part( 'inc/slider-post' );
+			        }
+		        ?>
+		
+		        <?php if ( have_posts() ) : ?>
+			    <?php /* Start the Loop */ ?>
+			    <?php while ( have_posts() ) : the_post(); ?>
 			
-                </div>			   
+				<?php get_template_part( 'content', get_post_format() ); ?>
+				
+			    <?php endwhile; ?>
+			
+			    <?php mwsmall_pagination_nav(); ?>
+			
+		        <?php else : ?>
+
+			    <?php get_template_part( 'content', 'none' ); ?>
+
+		        <?php endif; ?>
+
+	            </div><!-- #content -->
+
+                </section><!-- #primary -->
+               </div>			   
 		</li><!-- this is the part where feature image display here -->
 				
 	    <li id="jquery">

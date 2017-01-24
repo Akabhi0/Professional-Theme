@@ -15,10 +15,30 @@
                         echo $image[0]; ?>" />
 	  </li>
 	  
- 	  <li id="menu"><!--this is the code for drop down menu--> 
+
+	  <!--this is the frame work of two level drop down -->
+	  <li id="menu_level">
 	    <ul  id="parent" class="nav nav-pills">
-			  <?php wp_nav_menu(array("location"=>"primary")); ?>
-			 </ul><!--code of drop dowm n=menu is ennde here -->
- 	  </li>
+ 			   <li>  navaigatin bar
+                  <ul id="child">
+		              <li><a> child 1 </a></li>
+					  <li><a> child 2 </a>
+					      <ul id="baby">
+						    <li><a> baby 1 </a></li>
+							<li><a> baby 2 </a></li>
+							<li><a> baby 3 </a></li>
+						  </ul>
+					  </li>
+					  <li><a> child 3 </a></li>
+					  <li><a> child 4 </a></li>
+				  </ul>
+			   </li>
+			   <li> About us </li>
+			   <li> Contact Us</li>
+               <li> Fast </li>
+			   </ul>
+	    </li>
+	   
+	   
 	  </ul>
 	</div>

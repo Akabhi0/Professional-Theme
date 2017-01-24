@@ -1,7 +1,11 @@
 //add in the drop down menu in wordpress theme
 jQuery(document).ready(function(){
-  jQuery(".menu > li").hover(function(){
-    jQuery(this).find(".sub-menu").stop().slideToggle(200);
+  jQuery("#parent > li").hover(function(){
+    jQuery(this).find("#child").stop().slideToggle(200);
+	
+    jQuery("#child > li").hover(function(){
+      jQuery(this).find("#baby").stop().slideToggle(200);
+        });
  });
 });
 
