@@ -41,92 +41,99 @@ Use it to make something cool, have fun, and share what you've learned with othe
 			
 			#header #menu_level{
 			float:right;
-			width:60%;
+			width:63%;
 			margin:1% 0%;
 			padding:0%;		
      		}
 
-	        #header #menu_level ul {
-		    margin:0% 0%;
-		    padding:0%;
-		    width:100%;
-	        }
-	 
-		#header #menu_level ul li{
+	        .menu > li{
+			float:left;
 			width:15%;
+			margin:0% 0%;
+			padding:1%;
 			cursor:pointer;
 			text-align:center;
 			font:bold;
-			z-index:1;
+			
+			}
+			
+			.menu  li a{
+            font-family:tahoma;
 			font-size:15px;
+			color:#333;			
+			text-decoration:none;	
+			}
+			
+			.menu  li a:hover{
+				color:#993408;
+			}
+			
+			.sub-menu >li{
+			padding:1%;
+			cursor:pointer;	
 			padding:0%;
-			background:red;	
-		}
-
-		#header #menu_level #child{
+			font-size:15px;
 			width:100%;
-			height:auto;
-			background:#efdba7;
+			background:red;
+			}
+			
+			.sub-menu{
+            padding:0%;
+			margin:0% 0%;
 			position:absolute;
-			margin:0% 0%;
-			padding:0%;
-			display:none;
-		}
+			width:8%;				
+			}
+			
+			.sub-menu li{
+				width:100%;
+				padding:0%;
+				margin:0% 0%;
+			}
 
-		#header  #menu_level #child li{
-			width:100%;
-			cursor:pointer;
+		    .sub-menu li a{
 			text-align:center;
-			font:bold;
-			z-index:1;
-			font-size:100%;
-			padding:0%;
-			background:blue;
-			margin:0% 0%;
-		}
+			font-size:80%;
+            padding:0%;
+            margin:0% 0%;			
+			}	
+			
+			.sub-menu > li:hover{
+			background:black;
+			opacity: 0.7;
+			}
 
-		#header #child li:hover{
-			background:#000;
-			opacity:0.7;
-		}
-
-		#header #child li a{
-			margin:0% 0%;
-			padding:0%;
-			color:#fff;
-			text-decoration:none;
-		}
-
-		#header #child #baby{
-			width:100%;
-			height:auto;
-			position:relative;
-			margin:0% -100%;
-			padding:0%;
-			float:right;
-			display:none;
-		}
-
-		#header #baby li{
-			width:100%;
-			cursor:pointer;
+			.sub-menu > li a{
+			color:white;
 			text-align:center;
-			font:bold;
-			z-index:1;
-			font-size:100%;
-			padding:0%;
-			background:yellow;
-			margin:0% 0%;
-			list-style:none;
-		}
-
-		#header #baby li a{
-			margin:0% 0%;
-			padding:0%;
-			color:#000;
 			text-decoration:none;
-		}
-					
+			}
+			
+			.sub-menu .sub-menu{
+				width:100%;
+				padding:0%;
+				margin:0% 100%;
+				float:right;
+			}
+			
+	       .sub-menu .sub-menu li {
+			    width:100%;
+				cursor:pointer;
+				text-align:center;
+				font:bold;
+				z-index:1;
+				font-size:100%;
+				padding:0%;
+				background:blue;
+				margin:0% 0%;
+				list-style:none;
+		    }
+	
+	        .sub-menu .sub-menu li a{
+			   text-decoration:none;
+               padding:0%;
+               margin:0% 0%;			   
+			}
+				
 			
 /* header css finished here */			
 			
@@ -1193,3 +1200,9 @@ p{
   }
 /*the code of css for body is going to over here */	 
 }		
+
+
+
+	 
+		
+		
