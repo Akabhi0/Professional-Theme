@@ -10,7 +10,9 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 
-
+/*---------------------------------------------------------------------------------*/
+/*this is the part of header css of desktop screen */
+/*---------------------------------------------------------------------------------*/
 #header{
 	width:100%;
 	height:auto;
@@ -142,10 +144,15 @@ Use it to make something cool, have fun, and share what you've learned with othe
                			   
 			}
 				
-			
+/*----------------------------------------------------------------------*/			
 /* header css finished here */			
-			
-#footer{/* the code for footer part is here */
+/*----------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------*/
+/* the code for footer part is here */
+/*-----------------------------------------------------------------------*/
+
+#footer{
 	width:100%;
 	border:1px solid;
 	height:auto;
@@ -385,8 +392,13 @@ Use it to make something cool, have fun, and share what you've learned with othe
 			 float:right;
 			 margin:1% 10%;
 		 }
-
+/*----------------------------------------------------------------------*/
+/* the  footer part is over here */
+/*-----------------------------------------------------------------------*/
+		
+/*----------------------------------------------------------------------*/
 /* this is the part of the body */
+/*-----------------------------------------------------------------------*/		
 #body{
 	border:1px solid;
 	width:100%;
@@ -614,14 +626,22 @@ Use it to make something cool, have fun, and share what you've learned with othe
   #pic .carousel-inner{
 	  height:100%;
   }
+  
+/*---------------------------------------------------------*/ 
 /*the code of css for body is going to over here */	 
-	 
+/*---------------------------------------------------------*/
 
 
-	 
-/* this is th part for responsive web development */		
+/*---------------------------------------------------------*/ 
+/* this is th part for responsive web development */	 
+/*---------------------------------------------------------*/
 @media screen and (min-width: 0px) and (max-width: 380px){
 
+
+
+/*---------------------------------------------------------------------------------*/
+/*this is the part of header css of mobile screen */
+/*---------------------------------------------------------------------------------*/
 #header{
 	width:100%;
 	height:auto;
@@ -738,10 +758,15 @@ Use it to make something cool, have fun, and share what you've learned with othe
 			text-align:center;
 			text-decoration:none;
 			}
-			
-/* header css finished here */			
-			
-#footer{/* the code for footer part is here */
+
+/*---------------------------------------------------------------------------------*/
+/* header css finished here */	
+/*---------------------------------------------------------------------------------*/
+		
+/*---------------------------------------------------------------------------------*/
+/* the code for footer part is here */
+/*---------------------------------------------------------------------------------*/
+#footer{
 	width:100%;
 	border:1px solid;
 	height:auto;
@@ -980,8 +1005,13 @@ Use it to make something cool, have fun, and share what you've learned with othe
 			 float:right;
 			 margin:0% 0%;
 		 }
+/*---------------------------------------------------------------------------------*/
+/* the  footer part end is here */
+/*---------------------------------------------------------------------------------*/
 
+/*---------------------------------------------------------------------------------*/
 /* this is the part of the body */
+/*---------------------------------------------------------------------------------*/
 #body{
 	border:1px solid;
 	width:100%;
@@ -1212,8 +1242,14 @@ p{
       opacity:0.6;	
       margin:1.5% 38.5%;	  
   }
+ /*---------------------------------------------------------------*/
 /*the code of css for body is going to over here */	 
+/*-----------------------------------------------------------------*/
 }		
+
+ /*---------------------------------------------------------------*/
+/*the code of css mobile responsive is going to over here */	 
+/*-----------------------------------------------------------------*/
 
 
 
