@@ -491,6 +491,12 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	  font-size:15px;
 	  color:#000;
 	  font-family:georgian;
+	  position:relative;
+  }
+  
+  #jquery #block1 div{
+	position:relative;  
+	text-align:left;
   }
   
   #jquery #block2{

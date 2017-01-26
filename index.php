@@ -68,8 +68,8 @@
 				    <?php
 			         echo get_the_post_thumbnail($key); // <!--this is the code for the importing the backgorund image-->
                           $dis = get_page($key); ?>					
-					<h4><?php echo  $dis->post_title; ?></h4>
-				<?php echo  substr($dis -> post_content,0,130); } } ?>
+					<h4><?php  echo  $dis->post_title; ?></h4>
+				    <?php echo  substr($dis -> post_content,0,130); } }  ?>
 		        </li>
 				
 			    
