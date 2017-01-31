@@ -1,9 +1,23 @@
 <?php //adding javascript and jquery files into wordpress theam
+
     function javascript_file(){	
+	//this is the code to add style sheet in the wordpress theme
+	wp_enqueue_style( 'style', get_stylesheet_uri(), array(), null );
+	
+	//this is the code to add the bootstrap file into the wordpress theme
+	wp_register_script( 'bootstrap-js', get_template_directory_uri() . '/js/bootstrap.js', array('jquery'), NULL, true );
+    wp_register_style( 'bootstrap-css', get_template_directory_uri() . '/css/bootstrap.css', false, NULL, 'all' );
+
+    wp_enqueue_script( 'bootstrap-js' );
+    wp_enqueue_style( 'bootstrap-css' );
+
+	
+	//this is the code to add the javascript file into the wordpress theme
     wp_enqueue_script( 'script', get_stylesheet_directory_uri()  . '/js/js.js', array('jquery'));
 	}
   //appling action on this function
     add_action('init','javascript_file');
+	
 	
 	//adding thumbmail for images
     add_theme_support( 'post-thumbnails' );	
@@ -123,7 +137,7 @@
 			function mwsmall_pagination_nav(){
 	        global $wp_query, $post;
 	
-	if ( $wp_query->max_num_pages > 1 && ( is_home() || is_archive() || is_search() ) ) : // navigation links for home, archive, and search pages ?>
+	     if ( $wp_query->max_num_pages > 1 && ( is_home() || is_archive() || is_search() ) ) : // navigation links for home, archive, and search pages ?>
 	<nav class="navigation paging-navigation" role="navigation">
 		<?php if ( get_next_posts_link() ) : ?>
 		<div class="nav-previous"><?php next_posts_link( __( 'Older posts', 'mw-small' ) ); ?></div>
