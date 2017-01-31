@@ -657,7 +657,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 			}
 
 			#header #logo{
-			  border:1px solid;
+			  border:0px;
               float:left;
               margin:3% 30%;
               padding:0%;
@@ -786,13 +786,13 @@ Use it to make something cool, have fun, and share what you've learned with othe
 /*---------------------------------------------------------------------------------*/
 #footer{
 	width:100%;
-	border:1px solid;
+	border:0;
 	height:auto;
 	background:url("image/body-map.jpg");
 }
          #footer1{   /*this is the part of footer1 css */
 			   height:50%;
-			   border:1px solid;
+			   border:0px;
 		   }
 		   
 		  #footer1 ul{
@@ -801,7 +801,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 		  }
 		 
 		 #footer #widget{
-			 border:1px solid;
+			 border:0px;
 			 width:100%;
 			 height:100%;
 			 padding:0%;
@@ -812,7 +812,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 		#footer #widget_part{
 			width:100%;
 			height:100%;
-			border:1px solid;
+			 border:1px solid;
 			margin:0% 0%;
 			padding:0%;
 		 }
@@ -823,7 +823,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 			margin:0% 1%;
 			float:left;
 			list-style:none;
-			border:1px solid;
+			 border:0;
 		 }
 		 
 		 #footer #widget #pagess li{
@@ -1031,7 +1031,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 /* this is the part of the body */
 /*---------------------------------------------------------------------------------*/
 #body{
-	border:1px solid;
+	 border:0px;
 	width:100%;
 	height:auto;
 	padding:0%;
@@ -1053,7 +1053,7 @@ p{
 	   height:40%;
 	   position:relative;
 	   background:#949599;
-	   border:1px solid; 
+	   border:0px; 
    }
    
    #jquery{
@@ -1062,7 +1062,7 @@ p{
 	   margin:0% 0%;
 	   width:100%;
 	   height:40%;
-	   border:1px solid;
+	   border:0px solid;
    }
 
    #sub_pages{
@@ -1096,7 +1096,7 @@ p{
 	 float:left;
 	 margin:0% 1%;
      padding:0%;
-     border:1px solid;
+      border:0px solid ;
      width:25%;
      display:inline;
      height:20%;	 
