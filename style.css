@@ -419,6 +419,20 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	   border:1px solid; 
    }
    
+   #javascript #pic .carousel-caption{
+    margin:-21% 68%;
+	padding:0%;
+	width:30%;
+	float:right;
+	height:auto;
+   }   
+   
+   
+   #javascript #pic .carousel-caption h1{
+    margin:0% 0%;
+	padding:0%;
+   }   
+   
    #jquery{
 	   background:#fff;
 	   padding:0%;

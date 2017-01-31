@@ -4,8 +4,7 @@
 	    <li id="javascript"> 
 		
             <div id="pic">
-			    <?php  if(is_front_page()){?>
-				<?php query_posts('showposts=3&post_type=post'); ?>
+				<?php query_posts('showposts=5&post_type=post'); ?>
 				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
 				  <ol class="carousel-indicators">
@@ -26,7 +25,8 @@
 					  <img src="<?php echo $url; ?>" alt="<?php the_title; ?>">
 					<?php } ?>
 					  <div class="carousel-caption">
-					<?php the_title(); ?>
+					<h1><?php the_title(); ?></h1>
+					<p><?php the_content(); ?></p>
 					  </div>
 					</div>
 				    <?php endwhile; endif;  ?>	
@@ -42,7 +42,7 @@
 					<span class="sr-only">Next</span>
 				  </a>
 				</div>
-				<?php } wp_reset_query(); ?> 
+				<?php wp_reset_query(); ?> 
 	        </div><!-- #content -->	
 
 		</li><!-- this is the part where feature image display here -->

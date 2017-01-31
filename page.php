@@ -2,74 +2,49 @@
 	<div id="body">
 	  <ul>
 	    <li id="javascript"> 
-                <div id="pic">
-			    <?php  
-				   /* $args = array(
-                   'post__in' => array(154,127,129)
-                    );
-						$lastposts = get_posts( $args );
-							foreach ( $lastposts as $post ) { 
-							if($post == 154 || 131 || 129 ){  */?>
-							<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-								  <!-- Indicators -->
-								  <ol class="carousel-indicators">
-									<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-									<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-									<li data-target="#carousel-example-generic" data-slide-to="2"></li>
-								  </ol>
-
-								  <!-- Wrapper for slides -->
-								  <div class="carousel-inner" role="listbox">
-									<div class="item active">
-									    <?php /* if ( has_post_thumbnail()){
-	                                             the_post_thumbnail();
-							              } */
-									     ?>
-									  <div class="carousel-caption">
-										...
-									  </div>
-									</div>
-									<div class="item">
-									   <?php 
-									        /* if ( has_post_thumbnail()){
-	                                             the_post_thumbnail();
-						                       	 } */
-									 ?>
-									  <div class="carousel-caption">
-										...
-									  </div>
-									</div>
-								    
-									<div class="item">
-									   <?php 
-									        /* if ( has_post_thumbnail()){
-	                                             the_post_thumbnail();
-						                       	} } */
-									 ?>
-									  <div class="carousel-caption">
-										...
-									  </div>
-									</div>
-									
-								  </div>
-
-								  <!-- Controls -->
-								  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-									<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-									<span class="sr-only">Previous</span>
-								  </a>
-								  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-									<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-									<span class="sr-only">Next</span>
-								  </a>
-								</div>    
-																
-							<?php /*} */ ?>
-			
-                </div>			   
+		
+            <div id="pic">
+				<?php query_posts('showposts=3&post_type=post'); ?>
+				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+				  <ol class="carousel-indicators">
+					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+				  </ol>
+				  <div class="carousel-inner" role="listbox">
+                <?php if(have_posts()) : while (have_posts()) : the_post(); $i++;  ?>
+				<?php if($i == 1) { ?>
+				  <!-- Wrapper for slides -->
+					<div class="item active">
+				<?php } else { ?>
+				    <div class="item ">
+				<?php } ?>
+				    <?php if ( has_post_thumbnail() ) {
+	                          $url = wp_get_attachment_url(get_post_thumbnail_id()); ?>
+					  <img src="<?php echo $url; ?>" alt="<?php the_title; ?>">
+					<?php } ?>
+					  <div class="carousel-caption">
+					<?php the_title(); ?>
+					  </div>
+					</div>
+				    <?php endwhile; endif;  ?>	
+				  </div>
+                
+				  <!-- Controls -->
+				  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				  </a>
+				  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				  </a>
+				</div>
+				<?php wp_reset_query(); ?> 
+	        </div><!-- #content -->	
 		</li><!-- this is the part where feature image display here -->
-				
-	    
+
 	  </ul>
 	</div>
 <?php get_footer(); ?><!--this is the vode for adding the footer section in our body or index.php-->
