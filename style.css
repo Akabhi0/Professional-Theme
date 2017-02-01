@@ -169,6 +169,22 @@ Use it to make something cool, have fun, and share what you've learned with othe
 			 padding:0%;
 	         margin:0% 0%;
 		  }
+		  
+		  
+		 #footer_news #news{
+			 padding:0%;
+			 margin:0% 0%;
+		 }
+		 
+		  #footer_news p{
+			 text-decoration-style:dashed;
+			 margin:1% 3%;
+			 text-align:left;
+			 font-family:tahoma;
+			 font-size:17px;
+			 color:#888;
+			 cursor:pointer;
+		  }
 		 
 		 #footer #widget{
 			 border:0px solid;
@@ -206,7 +222,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 			 margin:1% 3%;
 			 text-align:left;
 			 font-family:tahoma;
-			 font-size:15px;
+			 font-size:17px;
 			 color:#888;
 		}
 		
@@ -461,7 +477,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
    #javascript #pic .carousel-indicators{
 	   padding:0%;
 	   margin:0% 0%;
-	   width:5%;
+	   width:8%;
    }
    
     
@@ -1038,6 +1054,10 @@ p{
 	   position:relative;
 	   background:#949599;
 	   border:0px; 
+   }
+   
+   #javascript .carousel-indicators{
+	   display:none;
    }
    
    #jquery{

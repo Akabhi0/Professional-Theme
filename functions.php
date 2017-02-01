@@ -59,10 +59,10 @@
 	
  	register_sidebar( array(
 		'name'          => 'news widget', // this is the widget is used for //security and privacy
-		'before_widget' => '<div>',
+		'before_widget' => '<div id="news" >',
 		'after_widget'  => '</div>',
-		'before_title'  => '<a href=" " class="widget-title">'.wpb_postsbycategory().'.',
-		'after_title'   => '</a>',
+		'before_title'  => '<p>'.wpb_postsbycategory().'.',
+		'after_title'   => '</p>',
 	) );
 	
 	register_sidebar( array(
@@ -131,25 +131,4 @@
 
 			// Enable shortcodes in text widgets
 			add_filter('widget_text', 'do_shortcode');
-
-			//this is for calresole 
-			
-			function mwsmall_pagination_nav(){
-	        global $wp_query, $post;
-	
-	     if ( $wp_query->max_num_pages > 1 && ( is_home() || is_archive() || is_search() ) ) : // navigation links for home, archive, and search pages ?>
-	<nav class="navigation paging-navigation" role="navigation">
-		<?php if ( get_next_posts_link() ) : ?>
-		<div class="nav-previous"><?php next_posts_link( __( 'Older posts', 'mw-small' ) ); ?></div>
-		<?php endif; ?>
-
-		<?php if ( get_previous_posts_link() ) : ?>
-		<div class="nav-next"><?php previous_posts_link( __( 'Newer posts', 'mw-small' ) ); ?></div>
-		<?php endif; ?>
-	<?php endif; ?>
-
-	</nav>
-	<?php
-    }
-
 ?>

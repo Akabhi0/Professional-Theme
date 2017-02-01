@@ -11,6 +11,7 @@
 					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
 					<li data-target="#carousel-example-generic" data-slide-to="1"></li>
 					<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="3"></li>
 				  </ol>
 				  <div class="carousel-inner" role="listbox">
                 <?php if(have_posts() == 178 || 176 || 173 || 180 ) : while (have_posts()) : the_post(); $i++;  ?>
@@ -25,7 +26,7 @@
 					  <img src="<?php echo $url; ?>" alt="<?php the_title; ?>">
 					<?php } ?>
 					  <div class="carousel-caption">
-					<h2><?php the_title(); ?><?php //the_permalink(); ?></h2>
+					<h2><?php the_title(); ?></h2>
 					<p><?php echo substr(get_the_excerpt(),0,250); ?></p>
 					  </div>
 					</div>

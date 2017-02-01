@@ -6,7 +6,8 @@
 	     <li id="widget">
 		    <ul id="widget_part">
 			
-                  <li id="footer_news">  
+                  <li id="footer_news">
+                  <p>Recent News </p>				  
 				  <?php  if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('news widget') ): ?>
 	              <?php endif; ?>
 			      </li>
