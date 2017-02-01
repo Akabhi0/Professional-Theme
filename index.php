@@ -4,7 +4,7 @@
 	    <li id="javascript"> 
 		
             <div id="pic">
-				<?php query_posts('showposts=5&post_type=post'); ?>
+				<?php query_posts('showposts=4&post_type=post'); ?>
 				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
 				  <ol class="carousel-indicators">
@@ -13,7 +13,7 @@
 					<li data-target="#carousel-example-generic" data-slide-to="2"></li>
 				  </ol>
 				  <div class="carousel-inner" role="listbox">
-                <?php if(have_posts()) : while (have_posts()) : the_post(); $i++;  ?>
+                <?php if(have_posts() == 178 || 176 || 173 || 180 ) : while (have_posts()) : the_post(); $i++;  ?>
 				<?php if($i == 1) { ?>
 				  <!-- Wrapper for slides -->
 					<div class="item active">
@@ -25,8 +25,8 @@
 					  <img src="<?php echo $url; ?>" alt="<?php the_title; ?>">
 					<?php } ?>
 					  <div class="carousel-caption">
-					<h1><?php the_title(); ?></h1>
-					<p><?php the_content(); ?></p>
+					<h2><?php the_title(); ?><?php //the_permalink(); ?></h2>
+					<p><?php echo substr(get_the_excerpt(),0,250); ?></p>
 					  </div>
 					</div>
 				    <?php endwhile; endif;  ?>	
