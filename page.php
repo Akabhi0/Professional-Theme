@@ -25,7 +25,8 @@
 					  <img src="<?php echo $url; ?>" alt="<?php the_title; ?>">
 					<?php } ?>
 					  <div class="carousel-caption">
-					<?php the_title(); ?>
+					<h2><?php the_title(); ?></h2>
+					<p><?php echo substr(get_the_excerpt(),0,250); ?></p>
 					  </div>
 					</div>
 				    <?php endwhile; endif;  ?>	
