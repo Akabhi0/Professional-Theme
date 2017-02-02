@@ -45,7 +45,7 @@
 				</div>
 				<?php wp_reset_query(); ?> 
 	        </div><!-- #content -->	
-
+        </div>
 		</li><!-- this is the part where feature image display here -->
 				
 	    <li id="jquery">

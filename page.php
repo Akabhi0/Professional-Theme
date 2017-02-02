@@ -4,16 +4,17 @@
 	    <li id="javascript"> 
 		
             <div id="pic">
-				<?php query_posts('showposts=3&post_type=post'); ?>
+				<?php query_posts('showposts=4&post_type=post'); ?>
 				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
 				  <ol class="carousel-indicators">
 					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
 					<li data-target="#carousel-example-generic" data-slide-to="1"></li>
 					<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="3"></li>
 				  </ol>
 				  <div class="carousel-inner" role="listbox">
-                <?php if(have_posts()) : while (have_posts()) : the_post(); $i++;  ?>
+                <?php if(have_posts() == 178 || 176 || 173 || 180 ) : while (have_posts()) : the_post(); $i++;  ?>
 				<?php if($i == 1) { ?>
 				  <!-- Wrapper for slides -->
 					<div class="item active">
@@ -44,8 +45,8 @@
 				</div>
 				<?php wp_reset_query(); ?> 
 	        </div><!-- #content -->	
+        </div>
 		</li><!-- this is the part where feature image display here -->
-
 	  </ul>
 	</div>
 <?php get_footer(); ?><!--this is the vode for adding the footer section in our body or index.php-->
