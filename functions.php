@@ -122,7 +122,6 @@
 			$string .= '</ul></div>';
 
 			return $string;
-
 			/* Restore original Post Data */
 			wp_reset_postdata();
 			}
@@ -131,4 +130,3 @@
 
 			// Enable shortcodes in text widgets
 			add_filter('widget_text', 'do_shortcode');
-?>
