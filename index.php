@@ -45,7 +45,7 @@
 				</div>
 				<?php wp_reset_query(); ?> 
 	        </div><!-- #content -->	
-        </div>
+        
 		</li><!-- this is the part where feature image display here -->
 				
 	    <li id="jquery">
@@ -69,7 +69,7 @@
 			         echo get_the_post_thumbnail($key); // <!--this is the code for the importing the backgorund image-->
                           $dis = get_page($key); ?>					
 					<h4><?php  echo  $dis->post_title; ?></h4>
-				    <?php echo  substr($dis -> post_content,0,130); } }  ?>
+				        <?php echo  substr($dis -> post_content,0,100); } }  ?>
 		        </li>
 				
 			 </ul>

@@ -1,9 +1,10 @@
 <html>
  <head>
     <title><?php bloginfo('name'); ?> | <?php wp_title(); ?></title>
+	<meta name="viewport" content="width=device-width" >
 	<?php wp_head(); ?>
  </head>
- </body>
+ <body>
     <div id="header">
 	<ul id="main">
 	  <li id="logo"> 
@@ -13,7 +14,6 @@
                         echo $image[0]; ?>" />
 	  </li>
 	  
-
 	  <!--this is the frame work of two level drop down -->
 	  <li id="menu_level">
 	     <?php wp_nav_menu(array("location"=>"primary")); ?>

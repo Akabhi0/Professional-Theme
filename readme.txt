@@ -10,4 +10,4 @@ is worked well and having great value
 
   https://github.com/Akabhi0
   https://github.com/Akabhi0/simple-theme
-  https://scrutinizer-ci.com/g/Akabhi0/Professional-Theme/inspections/a06b193c-b7ed-4f26-8bf7-a7a3d6dffe78
+  https://scrutinizer-ci.com/g/Akabhi0/Pizza-Theme/code-structure/master/operation/functions.php%3A%3Awpb_postsbycategory

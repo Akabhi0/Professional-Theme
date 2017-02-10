@@ -4,13 +4,16 @@
 	//this is the code to add style sheet in the wordpress theme
 	wp_enqueue_style( 'style', get_stylesheet_uri(), array(), null );
 	
+	//this is the second style sheet for media query in wordpress
+	wp_enqueue_style( 'container-css',  get_stylesheet_directory_uri() . '/container.css',array(),null, 'only screen and  (max-width:650px)' );
+	
 	//this is the code to add the bootstrap file into the wordpress theme
 	wp_register_script( 'bootstrap-js', get_template_directory_uri() . '/js/bootstrap.js', array('jquery'), NULL, true );
     wp_register_style( 'bootstrap-css', get_template_directory_uri() . '/css/bootstrap.css', false, NULL, 'all' );
 
     wp_enqueue_script( 'bootstrap-js' );
     wp_enqueue_style( 'bootstrap-css' );
-
+    wp_enqueue_style( 'container-css' );
 	
 	//this is the code to add the javascript file into the wordpress theme
     wp_enqueue_script( 'script', get_stylesheet_directory_uri()  . '/js/js.js', array('jquery'));
